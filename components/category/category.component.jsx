@@ -9,8 +9,8 @@ const Category = ({category})=>{
         <div className={classes["category-container"]}>
         <h2 className={classes.title}>{title.toUpperCase()}</h2>
         <div className={classes.preview}> 
-            {items && items.map((product)=>(
-             <ProductCard key={product.id} product={product}/>
+            {items.length !== 0 && items.map((product)=>(
+             <ProductCard key={product.id} product={product} category={title}/>
             ))}
         </div>
     </div>

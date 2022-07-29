@@ -12,6 +12,7 @@ const Checkout = ()=>{
             <div className={classes["checkout-header"]}>
                 <div className={classes["header-block"]}><span>Product</span></div>
                 <div className={classes["header-block"]}>Description</div>
+                <div className={classes["header-block"]}><span>Size</span></div>
                 <div className={classes["header-block"]}>Quantity</div>
                 <div className={classes["header-block"]}>Price</div>
                 <div className={classes["header-block"]}>Remove</div>

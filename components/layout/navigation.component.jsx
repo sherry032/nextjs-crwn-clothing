@@ -27,7 +27,7 @@ const Navigation =()=>{
         <div className={classes.navigation}>
             <Link href="/">
               <a>
-              <Image className={classes.log} src="/crown.svg" width="70px" height="70px" alt="crown clothing logo"/>
+              <div className={classes.log}>LIFETIME FASHION</div>
               </a>
             </Link>
             <div className={classes["nav-links-container"]}>

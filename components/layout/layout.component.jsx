@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Footer from '../footer/footer.component';
 import Navigation from "./navigation.component"
 
 function Layout(props) {
@@ -6,6 +7,7 @@ function Layout(props) {
     <Fragment>
       <Navigation />
       <main>{props.children}</main>
+      <Footer />
     </Fragment>
   );
 }

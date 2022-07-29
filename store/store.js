@@ -8,6 +8,7 @@ import cartReducer from "./cart/cartSlice"
 import productsReducer from "./products/productsSlice"
 import userReducer  from "./user/userSlice"
 import { combineReducers } from 'redux'
+import logger from 'redux-logger'
 
 const rootReducer = combineReducers({
   cart: cartReducer,
@@ -30,7 +31,7 @@ export const store = configureStore({
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: false,
-    }),
+    }).concat(logger),
 })
 
 export let persistor = persistStore(store)

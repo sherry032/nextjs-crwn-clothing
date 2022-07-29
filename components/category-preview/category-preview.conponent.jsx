@@ -12,7 +12,7 @@ const CategoryPreview = ({title, products})=>{
                             </Link></h2>
                         <div className={classes.preview}> 
                             {products.slice(0, 4).map((product)=>(
-                                <ProductCard key={product.id} product={product}/>
+                                <ProductCard key={product.id} product={product} category={title}/>
                             ))}
                         </div>
                     </div>

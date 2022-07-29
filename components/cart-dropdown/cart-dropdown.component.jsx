@@ -18,7 +18,7 @@ return(
     <div className={classes["cart-dropdown-container"]}>
         {cartItems.length === 0 ? <p className={classes["empty-message"]}>Your cart is empty.</p> :
         (<div className={classes["cart-items"]}>
-            {cartItems.map(item=><CartItem key={item.id} cartItem={item}/>)}
+            {cartItems.map(item=><CartItem key={`${item.id}${item.size}`} cartItem={item}/>)}
         </div>)}
         <Button onClick={goToCheckoutHandler}>Checkout</Button>
     </div>
